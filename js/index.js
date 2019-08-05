@@ -76,12 +76,9 @@ href2.href = "#"
 //__________________________________________________________________________________
 
 let dom = document.querySelector('h1')
-dom.textContent = siteContent.cta.h1
-// dom.style.width = "50%";
-dom.style.flexWrap = 'wrap'
-
-// let wrap = document.querySelector('cta-text')
-// wrap.style.width = "40%";
+dom.innerHTML = siteContent.cta.h1.split(' ').join
+('<br>');
+dom.style.color = 'red'
 
 let button = document.querySelector('button')
 button.textContent = siteContent.cta.button
