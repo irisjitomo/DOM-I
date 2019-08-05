@@ -46,8 +46,41 @@ nav.forEach(function(value, i){
   value.textContent = siteContent.nav[`nav-item-${i+1}`]
 })
 
+nav.forEach(navEle => {
+  navEle.style.color = 'green';
+})
+// __________New Navs_______________
+
+const navEl = document.querySelector('nav');
+
+const newNavItem1 = document.createElement('a')
+newNavItem1.textContent = "firstNewNav"
+
+navEl.appendChild(newNavItem1)
+
+const newNavItem2 = document.createElement('a')
+newNavItem2.textContent = "secondNewNav"
+
+navEl.appendChild(newNavItem2)
+
+const newItems = document.querySelectorAll('a')
+newItems.forEach(element => {
+  element.style.color = 'green'
+})
+
+const href1 = document.querySelectorAll('a')[6];
+href1.href = "#"
+
+const href2 = document.querySelectorAll('a')[7];
+href2.href = "#"
+//__________________________________________________________________________________
+
 let dom = document.querySelector('h1')
 dom.textContent = siteContent.cta.h1
+dom.style.width = "40%";
+
+// let wrap = document.querySelector('cta-text')
+// wrap.style.width = "40%";
 
 let button = document.querySelector('button')
 button.textContent = siteContent.cta.button
