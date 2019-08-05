@@ -77,7 +77,8 @@ href2.href = "#"
 
 let dom = document.querySelector('h1')
 dom.textContent = siteContent.cta.h1
-dom.style.width = "40%";
+// dom.style.width = "50%";
+dom.style.flexWrap = 'wrap'
 
 // let wrap = document.querySelector('cta-text')
 // wrap.style.width = "40%";
@@ -170,3 +171,6 @@ contactEmail.textContent = siteContent.contact.email
 
 let footerInfo = document.querySelector('footer p')
 footerInfo.textContent = siteContent.footer.copyright
+
+let wrap = document.querySelector('.cta-text')
+wrap.style.width = "20%";
